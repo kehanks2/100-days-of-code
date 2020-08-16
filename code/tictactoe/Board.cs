@@ -11,6 +11,8 @@ namespace TicTacToe
         private int[] board_state;
         private int total_plays;
         private int winner;
+        
+        // constructor
         public Board()
         {
             this.player_pos = 0;
@@ -19,6 +21,7 @@ namespace TicTacToe
             this.total_plays = 0;
         }
 
+        // reset board to begin new game
         public void ClearBoard()
         {
             this.player_pos = 0;
@@ -29,19 +32,18 @@ namespace TicTacToe
 
         public void Play()
         {
+            // check for game over
             if (IsGameOver())
-            {
                 EndGame();
-            }
             
             bool valid;
             int pos;
-            do
+            do 
             {
                 Console.WriteLine("\nWhat position would you like to place your next piece?");
                 pos = Convert.ToUInt16(Console.ReadLine());
 
-                // check player position for correctness and unsure position has not already been played
+                // check player position for correctness 
                 if (pos < 1 || pos > 9)
                 {
                     Console.WriteLine("Your entry is invalid. Please try again!");
@@ -49,14 +51,13 @@ namespace TicTacToe
                 }
                 else
                 {
+                    // check that position has not already been played
                     if (this.board_state[pos - 1] != 0)
                     {
                         Console.WriteLine("This position has already been played. Please try again!");
                         valid = false;
                     } else
-                    {
                         valid = true;
-                    }
                 }
             } while (!valid);
 
@@ -68,10 +69,11 @@ namespace TicTacToe
         {
             // X (player) = 1, O (ai) = 2
 
-            // check if player has had first turn. If so, update variables
+            // check if player has had first turn. If so, update board state and total plays
             if (this.player_pos != 0)
             {
                 this.board_state[this.player_pos - 1] = 1;
+                this.total_plays++;
             }
 
             // check for game over
@@ -91,17 +93,44 @@ namespace TicTacToe
 
                 // if position is already taken, roll again.
                 if (this.board_state[this.ai_pos - 1] != 0)
-                {
                     valid = false;
-                } else
-                {
+                else
                     valid = true;
-                }
+
             } while (!valid);
 
-            // update variables
+            // update board state and total plays
             this.board_state[this.ai_pos - 1] = 2;
+            this.total_plays++;
             CurrentBoard();
+        }
+        public void CurrentBoard()
+        {
+            Console.WriteLine("\n--Current Board State--");
+
+            // prints out the current board with player and ai pieces in proper positions
+            for (int x = 0; x < this.board_state.Length; x++)
+            {
+                switch (this.board_state[x])
+                {
+                    case 1:
+                        Console.Write("| X ");
+                        break;
+                    case 2:
+                        Console.Write("| O ");
+                        break;
+                    case 0:
+                        Console.Write("|   ");
+                        break;
+                }
+                // creates new line if position is last for that line
+                if (x == 2 || x == 5 || x == 8)
+                    Console.WriteLine("|");
+
+            }
+
+            Console.WriteLine("Key:\tPlayer = X\tComputer = O");
+            Play();
         }
 
         public bool IsGameOver()
@@ -149,21 +178,24 @@ namespace TicTacToe
         {
             Console.Write("\nGAME OVER! Results: ");
 
-            // tied game results
             if (this.winner == 0)
             {
+                // tied game results
                 Console.WriteLine("Tied!");
                 PlayAgain();
             } else if (this.winner == 1)
             {
+                // player win results
                 Console.WriteLine("You Win! Great Job.");
                 PlayAgain();
             } else if (this.winner == 2)
             {
+                // ai win results
                 Console.WriteLine("The Computer Wins! You'll get it next time.");
                 PlayAgain();
             } else
             {
+                // should never run
                 Console.Write("Unknown Error Occurred. Game Resetting.");
                 ClearBoard();
                 Instructions();
@@ -177,53 +209,38 @@ namespace TicTacToe
             {
                 Console.WriteLine("Play Again? [Y/N]: ");
                 string again = Console.ReadLine();
-                again.ToUpper();
+                again = again.ToUpper();
                 if (again == "Y")
                 {
+                    // starts new game with cleared board if yes
                     ClearBoard();
                     Instructions();
                     valid = true;
                 }
                 else if (again == "N")
                 {
-                    Console.WriteLine("Thanks for playing! You can press <enter> or close the game to quit.");
-                    valid = true;
-                    while (Console.ReadKey().Key != ConsoleKey.Enter) { }
-
+                    // user may exit game if no
+                    Console.WriteLine("Thanks for playing!");
+                    ExitConsole();
+                    return;
                 }
                 else
                 {
+                    // invalid entry allows player to enter again
                     Console.WriteLine("Invalid entry. Try again.");
                     valid = false;
                 }
             } while (!valid);
         }
 
-        public void CurrentBoard()
+        public void ExitConsole()
         {
-            Console.WriteLine("\n--Current Board State--");
-
-            Console.Write("| ");
-            for (int x = 0; x < this.board_state.Length; x++)
-            {
-                switch(this.board_state[x])
-                {
-                    case 1:
-                        break;
-                    case 2:
-                        break;
-                    default:
-                        break;
-                }
-            }
-
-            Console.WriteLine("Key:\tPlayer = X\tComputer = O");
-            Play();
+            Environment.Exit(0);
         }
 
         public void Instructions()
         {
-            Console.WriteLine("\n--Welcome to Tic-Tac-Toe!--/nPlease use the board reference below for position placement.");
+            Console.WriteLine("\n--Welcome to Tic-Tac-Toe!--\nPlease use the board reference below for position placement.");
             Console.WriteLine("\n| 1 | 2 | 3 |" +
                 "              \n| 4 | 5 | 6 |" +
                 "              \n| 7 | 8 | 9 |");
