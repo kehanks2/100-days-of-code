@@ -14,4 +14,4 @@
 
 **Thoughts:** I found [this](http://www.netinstructions.com/next-steps-for-aspiring-programmers-after-you-know-the-basics "'Net Instructions") last night. I decided to give these projects a go to make things a little more interesting. I may still do some coding exercises here and there, but I want to actually create something!
 
-**Link to work:** tictactoe-game/Board.cs
+**Link to work:** [Tic-Tac-Toe .cs file](https://github.com/kehanks2/100-days-of-code/blob/master/tictactoe-game/Board.cs)
