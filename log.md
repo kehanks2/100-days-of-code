@@ -11,8 +11,9 @@
 ### Day 1: August 16, 2020
 
 **Today's Progress**: Worked on a text-based Tic-Tac-Toe game for 2 hours. About 80% done with the code.
-    **Edit**: Ended up spending a bit more time on this today (about 1 hour) and it's complete! I may revisit in the future to make the AI make smart decisions for play position (right now it is just random).
 
 **Thoughts:** I found [this](http://www.netinstructions.com/next-steps-for-aspiring-programmers-after-you-know-the-basics "'Net Instructions") last night. I decided to give these projects a go to make things a little more interesting. I may still do some coding exercises here and there, but I want to actually create something!
 
 **Link to work:** [Tic-Tac-Toe .cs file](code/tictactoe/Board.cs)
+
+**Edit**: Ended up spending a bit more time on this today (about 1 hour) and it's complete! I may revisit in the future to make the AI make smart decisions for play position (right now it is just random).
