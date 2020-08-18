@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 2: August 17, 2020
+
+**Today's Progress**: Completed all Java Warmup-2 exercises from [Coding Bat](https://codingbat.com/java/Warmup-2 "Coding Bat")
+
+**Thoughts:** Today was my first day back at University, as well as my daughter's first day of kindergarten (she is doing remote learning due to COVID-19). I was very busy and didn't have the time or the energy to do anything more than some simple coding exercises.
+
+**Link to work:** Completion proof: https://i.imgur.com/dXQwg9H.png
+
 ### Day 1: August 16, 2020
 
 **Today's Progress**: Worked on a text-based Tic-Tac-Toe game for 2 hours. About 80% done with the code.
