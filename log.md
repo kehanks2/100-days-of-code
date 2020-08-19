@@ -1,5 +1,14 @@
 # 100 Days Of Code - Log
 
+### Day 1: August 16, 2020
+
+**Today's Progress**: Completed the Basic HTML/HTML5 and Basic CSS courses on freeCodeCamp. 
+
+**Thoughts:** I got a callback on an entry level short term freelance position today! I will be fixing some issues with a client's WordPress theme, and thus, I wanted to brush up on my HTML and CSS prior to getting started. I plan to do more freeCodeCamp exercises on more advanced HTML/CSS before I am set to begin working just to be as prepared as possible.
+
+**Link to work:** [My freeCodeCamp profile](https://www.freecodecamp.org/kaylahanks "freeCodeCamp")
+
+
 ### Day 2: August 17, 2020
 
 **Today's Progress**: Completed all Java Warmup-2 exercises from [Coding Bat](https://codingbat.com/java/Warmup-2 "Coding Bat")
@@ -7,6 +16,7 @@
 **Thoughts:** Today was my first day back at University, as well as my daughter's first day of kindergarten (she is doing remote learning due to COVID-19). I was very busy and didn't have the time or the energy to do anything more than some simple coding exercises.
 
 **Link to work:** Completion proof: https://i.imgur.com/dXQwg9H.png
+
 
 ### Day 1: August 16, 2020
 
@@ -17,6 +27,7 @@
 **Link to work:** [Tic-Tac-Toe .cs file](code/tictactoe/Board.cs)
 
 **Edit**: Ended up spending a bit more time on this today (about 1 hour) and it's complete! I may revisit in the future to make the AI make smart decisions for play position (right now it is just random).
+
 
 ### Day 0: August 15, 2020
 
