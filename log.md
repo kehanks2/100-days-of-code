@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 1: August 16, 2020
+### Day 3: August 16, 2020
 
 **Today's Progress**: Completed the Basic HTML/HTML5 and Basic CSS courses on freeCodeCamp. 
 
