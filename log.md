@@ -6,7 +6,7 @@
 
 **Thoughts:** I will be doing a IBM HackerRank interview and I did a practice run in preparation. It took around an hour and included C# coding, command line questions, and multiple choice questions.
 
-**Link to work:** Unfortunately there is no way to link to proof of my work, but it was completed with [HackerRank](www.hackerrank.com).
+**Link to work:** Unfortunately there is no way to link to proof of my work, but it was completed with [HackerRank](https://www.hackerrank.com).
 
 ### Day 3: August 18, 2020
 
