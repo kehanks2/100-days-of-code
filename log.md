@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 4: August 19, 2020
+
+**Today's Progress**: Practiced for a HackerRank interview. 
+
+**Thoughts:** I will be doing a IBM HackerRank interview and I did a practice run in preparation. It took around an hour and included C# coding, command line questions, and multiple choice questions.
+
+**Link to work:** Unfortunately there is no way to link to proof of my work, but it was completed with [HackerRank](www.hackerrank.com).
+
 ### Day 3: August 18, 2020
 
 **Today's Progress**: Completed the Basic HTML/HTML5 and Basic CSS courses on freeCodeCamp. 
