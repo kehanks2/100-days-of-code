@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 6: August 21, 2020
+
+**Today's Progress**: Completed the Applied Visual Design course on [freeCodeCamp](https://www.freecodecamp.org). 
+
+**Thoughts:** Returned to FCC in preparation for my tentative internship on Monday!
+
+**Link to work:** https://www.freecodecamp.org/kaylahanks
+
 ### Day 5: August 20, 2020
 
 **Today's Progress**: Practiced Java on HackerRank. 
