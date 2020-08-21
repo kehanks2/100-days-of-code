@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 5: August 20, 2020
+
+**Today's Progress**: Practiced Java on HackerRank. 
+
+**Thoughts:** Started messing around in HackerRank and before I knew it, it had been 3 hours! At least I got my coding done for the day. :D
+
+**Link to work:** https://www.hackerrank.com/notthesun
+
 ### Day 4: August 19, 2020
 
 **Today's Progress**: Practiced for a HackerRank interview. 
