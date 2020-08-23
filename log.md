@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Day 7: August 22, 2020
+
+**Today's Progress**: Practiced on HackerRank. 
+
+**Thoughts:** Too busy with school right now to do much more than this!
+
+**Link to work:** https://www.hackerrank.com/notthesun
+
 ### Day 6: August 21, 2020
 
 **Today's Progress**: Completed the Applied Visual Design course on [freeCodeCamp](https://www.freecodecamp.org). 
